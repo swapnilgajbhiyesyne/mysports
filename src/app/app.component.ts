@@ -43,8 +43,8 @@ export class MyApp {
   showStandings()
   {
 
-   // this.nav.push(StandingsPage); 
-   this.rootPage=StandingsPage;
+    this.nav.push(StandingsPage); 
+   //this.rootPage=StandingsPage;
 
     //this.pushPage=StandingsPage;
     
