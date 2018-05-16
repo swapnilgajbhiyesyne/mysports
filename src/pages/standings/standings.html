@@ -1,8 +1,4 @@
 
-<ion-header>
-    <ion-navbar></ion-navbar>
-
-</ion-header>
 
 
 
@@ -14,11 +10,33 @@
                 <ion-icon name="home"></ion-icon>
             </button>
         </ion-buttons>
-      <ion-title>Teams</ion-title>
+      <ion-title>Standings</ion-title>
     </ion-navbar>
   
   </ion-header>
 <ion-content padding>
 
-    <h2>Standings</h2>
+    
+    <!-- <ul>
+        <li *ngFor="let i of data">{{i.id}}</li>
+    </ul> -->
+    <ion-grid style="background-color: lightslategrey">
+            <ion-row>
+            <ion-col col-2>Teams</ion-col>
+            <ion-col col-2>Played</ion-col>
+            <ion-col col-2>Win</ion-col>
+            <ion-col col-2>Loss</ion-col>
+            <ion-col col-2>Points</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let i of data" style="background-color: beige;">
+                <ion-col col-2>{{i.id}}</ion-col>
+            
+            <ion-col col-2>{{i.P}}</ion-col>
+             <ion-col col-2>{{i.W}}</ion-col>
+             <ion-col col-2>{{i.L}}</ion-col>
+             <ion-col col-2>{{i.PtS}}</ion-col>
+            
+        </ion-row>
+       
+    </ion-grid>
 </ion-content>
