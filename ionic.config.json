@@ -1,0 +1,8 @@
+{
+  "name": "CoolApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "028f36f7"
+}
